@@ -9,6 +9,11 @@ Filename = 'Algofact #'
 #excel document
 workbook = load_workbook(filename="Algostats.xlsx")
 sheet = workbook.active
+#make folder
+import os
+mypath = "Generated"
+if not os.path.isdir(mypath):
+   os.makedirs(mypath)
 
 def generateMatrix():
     #create canvas varialbe
